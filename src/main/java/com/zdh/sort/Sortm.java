@@ -9,7 +9,7 @@ public class Sortm
 		a = sm.maoPaoSort(a);
 		sm.display(a);
 		
-		
+		//inset different
 		
 	}
 	
