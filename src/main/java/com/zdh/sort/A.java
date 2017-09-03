@@ -10,7 +10,7 @@ public class A
 		}
 		if(falg)
 		{
-			System.out.println();
+			System.out.println(123);
 		}
 	}
 }
