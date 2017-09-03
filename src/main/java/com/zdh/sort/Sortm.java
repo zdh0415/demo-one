@@ -8,9 +8,6 @@ public class Sortm
 		long[] a = {3,4,5,2,1};
 		a = sm.maoPaoSort(a);
 		sm.display(a);
-		
-		//inset different
-		
 	}
 	
 	public long[] maoPaoSort(long[] a)
