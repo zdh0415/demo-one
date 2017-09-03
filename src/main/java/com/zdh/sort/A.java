@@ -10,7 +10,7 @@ public class A
 		}
 		if(falg)
 		{
-			System.out.println(123);
+			System.out.println(123 + "Hello Git");
 		}
 	}
 }
