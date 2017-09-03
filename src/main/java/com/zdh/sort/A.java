@@ -2,9 +2,13 @@ package com.zdh.sort;
 
 public class A
 {
-	public void test()
+	public void test(int i)
 	{
-		if(true)
+		boolean falg = false;
+		if (i > 0) {
+			falg = true;
+		}
+		if(falg)
 		{
 			System.out.println();
 		}
