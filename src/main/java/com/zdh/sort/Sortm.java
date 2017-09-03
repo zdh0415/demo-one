@@ -5,8 +5,8 @@ public class Sortm
 	
 	public static void main(String[] args) {
 		Sortm sm = new Sortm();
-		long[] a = {3,4,5,2,1};
-		a = sm.maoPaoSort(a);
+		int[] a = {3,4,5,2,1};
+		a = sm.selectSort(a);
 		sm.display(a);
 	}
 	
@@ -62,5 +62,40 @@ public class Sortm
 			System.out.print(t[i] + "\t");
 		}
 		System.out.println();
+	}
+	
+	
+	public int[] insertSort(int[] nums) 
+	{
+		int anyone;
+		for (anyone = 1; anyone < nums.length; anyone++)
+		{
+			int temp = nums[anyone];
+			while (anyone > 0 && nums[anyone - 1] > temp) {
+				nums[anyone] = nums[anyone - 1];
+				anyone--;
+			}
+			nums[anyone] = temp;
+		}
+		return nums;
+	}
+	
+	
+	public int[] selectSort(int[] nums)
+	{
+		for (int i = 0; i < nums.length - 1; i++)
+		{
+			int min = i;
+			for (int j = i + 1; j < nums.length; j++)
+			{
+				if (nums[min] > nums[j]) {
+					min = j;
+				}
+			}
+			int temp = nums[i];
+			nums[i] = nums[min];
+			nums[min] = temp;
+		}
+		return nums;
 	}
 }
