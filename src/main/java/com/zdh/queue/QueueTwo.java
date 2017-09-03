@@ -53,4 +53,8 @@ public class QueueTwo<E>
 			return (maxSize - front) + (rear + 1);
 		}
 	}
+	
+	public String test() {
+		return "Hello World";
+	}
 }
